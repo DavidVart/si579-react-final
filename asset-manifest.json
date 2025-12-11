@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/si579-react-final/static/css/main.fbe2a58a.css",
+    "main.js": "/si579-react-final/static/js/main.a0721157.js",
+    "index.html": "/si579-react-final/index.html",
+    "main.fbe2a58a.css.map": "/si579-react-final/static/css/main.fbe2a58a.css.map",
+    "main.a0721157.js.map": "/si579-react-final/static/js/main.a0721157.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbe2a58a.css",
+    "static/js/main.a0721157.js"
+  ]
+}
