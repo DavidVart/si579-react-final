@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0f172a;
+  color: #f9fafb;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background-color: #1f2937;
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #38bdf8;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #d1d5db;
+}
+
+/* Task Form */
+.task-form {
+  margin-bottom: 2rem;
+}
+
+.task-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.task-form-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #374151;
+  border-radius: 0.25rem;
+  background-color: #0f172a;
+  color: #f9fafb;
+  font-size: 1rem;
+}
+
+.task-form input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+.task-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-form button:hover {
+  background-color: #0ea5e9;
+}
+
+.task-form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+}
+
+/* Task List */
+.task-list {
+  margin-bottom: 2rem;
+}
+
+.task-list h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.task-list ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: #0f172a;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #374151;
+}
+
+.task-list input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  accent-color: #38bdf8;
+}
+
+.task-list input[type="checkbox"]:focus {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+.task-label {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.task-label.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+  color: #9ca3af;
+}
+
+.task-list .remove-btn {
+  padding: 0.25rem 0.75rem;
+  background-color: #ef4444;
+  color: #f9fafb;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-list .remove-btn:hover {
+  background-color: #dc2626;
+}
+
+.task-list .remove-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3);
+}
+
+.task-summary {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Random Task */
+.random-task {
+  text-align: center;
+}
+
+.random-task button {
+  padding: 0.75rem 1.5rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 1rem;
+}
+
+.random-task button:hover {
+  background-color: #0ea5e9;
+}
+
+.random-task button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+}
+
+.random-task-result {
+  min-height: 3rem;
+  padding: 1rem;
+  background-color: #0f172a;
+  border-radius: 0.25rem;
+  border: 2px solid #374151;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.random-task-result:empty {
+  border-style: dashed;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .app-container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .task-form-row {
+    flex-direction: column;
+  }
+
+  .task-form button {
+    width: 100%;
+  }
+}
+
